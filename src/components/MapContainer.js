@@ -59,5 +59,5 @@ export class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyAVxO0j9HPK6IJnrP6AHm8gZ3NCvrl7IjQ",
+  apiKey: process.env.GOOGLE_API_TOKEN,
 })(Maps)
