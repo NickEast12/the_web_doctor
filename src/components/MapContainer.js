@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react"
 
-const googleAPI = process.env.GOOGLE_API_KEY
+const googleAPI = process.env.GATSBY_GOOGLE_API_KEY
 
 const MyMapStyles = [
   {
