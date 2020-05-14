@@ -1,0 +1,21 @@
+//* Main Colours
+$background: #464646;
+$titleColour: #049a9e;
+$alternativeColour: #0b2b53;
+$fontColour: #dadada;
+$footerColour: #1f3040;
+$altFooter: #13212e;
+
+//? Mixins
+
+@mixin pFont {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: Avenir;
+}
+
+@mixin hFont {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}

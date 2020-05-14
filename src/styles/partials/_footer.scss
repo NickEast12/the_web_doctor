@@ -1,0 +1,112 @@
+@import "variables";
+
+.footer__wrapper {
+  background: $footerColour;
+  &__news {
+    width: 85%;
+    margin: 0 auto;
+    &__inner {
+      padding: 2.5rem 0;
+      width: 95%;
+      margin: 0 auto;
+      &__title {
+        padding-bottom: 1.25rem;
+        color: #fff;
+        h4 {
+          @include hFont;
+          font-size: 1.75rem;
+          padding-bottom: 1rem;
+          span {
+            color: $titleColour;
+            text-transform: capitalize;
+          }
+        }
+        p {
+          font-size: 0.95rem;
+          font-weight: 200;
+        }
+      }
+      &__btn {
+        input {
+          width: 100%;
+          background: #13212e;
+          border: none;
+          padding: 1.5rem 1rem;
+          font-size: 0.95rem;
+        }
+        button {
+          width: 100%;
+          background: $titleColour;
+          border: none;
+          margin-top: 0.25rem;
+          border-radius: 2.5px;
+          padding: 1.5rem;
+          font-size: 0.85rem;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+        }
+      }
+    }
+  }
+  &__lower {
+    background: #13212e;
+    width: 100%;
+    height: 100%;
+    &__inner {
+      width: 85%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 2.5rem;
+      &__title {
+        h4 {
+          @include hFont;
+          color: #fff;
+          font-size: 1.5rem;
+        }
+      }
+      &__links {
+        margin-top: 1.75rem;
+        &__section {
+          svg {
+            width: 25px;
+            height: 30px;
+            fill: $titleColour;
+          }
+          p {
+            color: #fff;
+            margin: 0.5rem 0 0.75rem 0;
+            font-size: 1rem;
+            font-weight: 200;
+          }
+        }
+      }
+      &__social {
+        display: flex;
+        width: 65%;
+        margin: 0 auto;
+        padding: 1.5rem 0 2.5rem 0;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+          width: 25px;
+        }
+      }
+    }
+  }
+  &__legal {
+    padding: 0.75rem 0;
+    background-color: #13212e;
+    text-align: center;
+    border-top: solid #fff 1px;
+    color: #fff;
+    p {
+      font-size: 0.75rem;
+      padding-bottom: 0.45rem;
+      cursor: pointer;
+      span {
+        color: $titleColour;
+      }
+    }
+  }
+}

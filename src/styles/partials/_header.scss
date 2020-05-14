@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+header {
+  .header__wrapper {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1rem 0.95rem 1rem;
+    &__logo {
+      h2 {
+        font-size: 1rem;
+        letter-spacing: 3.5px;
+      }
+    }
+
+    &__ham {
+      margin: 0;
+      padding: 0;
+
+      &__btn {
+        &__inner {
+        }
+      }
+    }
+  }
+  .mobile__menu {
+    display: block;
+    width: 100%;
+    background: $titleColour;
+    padding: 0;
+    transition: all 0.35s ease;
+    ul {
+      list-style: none;
+      li {
+        text-align: center;
+        padding: 0.95rem 0;
+        border-bottom: solid $fontColour 1px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
