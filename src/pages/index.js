@@ -3,11 +3,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/main.scss"
+import styled from "styled-components"
 import Logo1 from "../images/logo1.png"
 import Logo2 from "../images/logo2.png"
 import Logo3 from "../images/logo3.png"
 import Logo4 from "../images/logo4.png"
 import Logo5 from "../images/logo5.png"
+import IslandPhoto from "../images/islandP1.jpg"
+
+const PhotoDiv = styled.div`
+  background-image: url(${IslandPhoto});
+`
 
 const IndexPage = () => (
   <Layout>
@@ -19,22 +25,22 @@ const IndexPage = () => (
         </h1>
       </div>
       <div className="main__wrapper__projects">
-        <div className="main__wrapper__projects__inner">
+        <PhotoDiv className="main__wrapper__projects__inner">
           <h4>Luxury Island </h4>
           <h2>An exclusive private island for hire</h2>
-        </div>
-        <div className="main__wrapper__projects__inner">
+        </PhotoDiv>
+        <PhotoDiv className="main__wrapper__projects__inner">
           <h4>Luxury Island </h4>
           <h2>An exclusive private island for hire</h2>
-        </div>
-        <div className="main__wrapper__projects__inner">
+        </PhotoDiv>
+        <PhotoDiv className="main__wrapper__projects__inner">
           <h4>Luxury Island </h4>
           <h2>An exclusive private island for hire</h2>
-        </div>
-        <div className="main__wrapper__projects__inner">
+        </PhotoDiv>
+        <PhotoDiv className="main__wrapper__projects__inner">
           <h4>Luxury Island </h4>
           <h2>An exclusive private island for hire</h2>
-        </div>
+        </PhotoDiv>
       </div>
       <div className="main__wrapper__clients">
         <h2>
