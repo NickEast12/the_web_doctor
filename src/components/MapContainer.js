@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react"
 
+const googleAPI = process.env.GOOGLE_API_KEY
+
 const MyMapStyles = [
   {
     stylers: [
@@ -59,5 +61,5 @@ export class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.GOOGLE_API_TOKEN,
+  apiKey: googleAPI,
 })(Maps)
