@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,10 +26,12 @@ const IndexPage = () => (
         </h1>
       </div>
       <div className="main__wrapper__projects">
-        <PhotoDiv className="main__wrapper__projects__inner">
-          <h4>Luxury Island </h4>
-          <h2>An exclusive private island for hire</h2>
-        </PhotoDiv>
+        <Link to="/projects/luxury-island">
+          <PhotoDiv className="main__wrapper__projects__inner">
+            <h4>Luxury Island </h4>
+            <h2>An exclusive private island for hire</h2>
+          </PhotoDiv>
+        </Link>
         <PhotoDiv className="main__wrapper__projects__inner">
           <h4>Luxury Island </h4>
           <h2>An exclusive private island for hire</h2>
