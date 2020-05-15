@@ -1,4 +1,4 @@
-# Foobar
+# The Web Doctor
 
 The Web Doctor is a fictious website for a web development agency, built using Gatsby and the Contentful CMS.
 
