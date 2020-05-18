@@ -52,7 +52,7 @@ export class Maps extends Component {
         <Marker
           position={{ lat: 51.23796, lng: -0.20949 }}
           icon={{
-            url: "../icons/icon-72x72.png",
+            url: "../icons/Icon-88.png",
           }}
         />
       </Map>
