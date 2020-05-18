@@ -12,6 +12,8 @@ import Logo4 from "../images/logo4.png"
 import Logo5 from "../images/logo5.png"
 import IslandPhoto from "../images/islandP1.jpg"
 import Adventure from "../images/adv1.jpg"
+import Boom from "../images/boom4.jpg"
+import Coffee from "../images/coffee1.jpg"
 
 const PhotoDiv = styled.div`
   background-image: url(${IslandPhoto});
@@ -19,6 +21,12 @@ const PhotoDiv = styled.div`
 
 const PhotoDiv2 = styled.div`
   background-image: url(${Adventure});
+`
+const PhotoDiv3 = styled.div`
+  background-image: url(${Boom});
+`
+const PhotoDiv4 = styled.div`
+  background-image: url(${Coffee});
 `
 
 const IndexPage = () => (
@@ -43,17 +51,17 @@ const IndexPage = () => (
             <h2>Fall in love with the outdoors again</h2>
           </PhotoDiv2>
         </Link>
-        <Link to="">
-          <PhotoDiv className="main__wrapper__projects__inner">
-            <h4>Luxury Island </h4>
-            <h2>An exclusive private island for hire</h2>
-          </PhotoDiv>
+        <Link to="/projects/euphoria-festival">
+          <PhotoDiv3 className="main__wrapper__projects__inner">
+            <h4>Euphoria Festival</h4>
+            <h2>Complete rework of the UK largest festival</h2>
+          </PhotoDiv3>
         </Link>
-        <Link to="">
-          <PhotoDiv className="main__wrapper__projects__inner">
-            <h4>Luxury Island </h4>
-            <h2>An exclusive private island for hire</h2>
-          </PhotoDiv>
+        <Link to="/projects/independent-coffee">
+          <PhotoDiv4 className="main__wrapper__projects__inner">
+            <h4>Independent Coffee </h4>
+            <h2>A boutique coffee shop in the heart of Shoreditch</h2>
+          </PhotoDiv4>
         </Link>
       </div>
       <div className="main__wrapper__clients">
