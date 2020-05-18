@@ -120,6 +120,7 @@
       height: 42.5vh;
       h1 {
         font-size: 2.8rem;
+        padding-top: 2.5rem;
       }
     }
     &__projects {
@@ -142,9 +143,9 @@
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
   .main__wrapper {
     &__title {
-      height: 15vh;
+      height: 35vh;
       h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
       }
     }
     &__projects {
