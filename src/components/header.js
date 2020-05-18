@@ -33,6 +33,7 @@ const StyledBurger = styled.div`
 const StyledMenu = styled.div`
   transition: all .35s ease;  
   left: 0;
+  height: ${({ open }) => (open ? "100%" : "0")};
   // display:  ${({ open }) => (open ? "block" : "none")};
   max-height: ${({ open }) => (open ? "15rem" : "0")};
   top: 3rem;
