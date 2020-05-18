@@ -1,22 +1,30 @@
 @import "variables";
-.main__header__wrapper {
-  background: #fff;
-  position: relative;
-  z-index: 4;
-  height: 80vh;
-  padding: 4.5rem 0;
-  text-align: center;
-  h1 {
-    @include hFont;
-    font-weight: 200;
-    width: 90%;
-    margin: 0 auto;
-    color: $background;
-    font-size: 2.55rem;
+@media only screen and (min-width: 320px) {
+  .main__header__wrapper {
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    height: 80vh;
+    padding: 4.5rem 0;
     text-align: center;
-    span {
-      color: $titleColour;
-      display: block;
+    h1 {
+      @include hFont;
+      font-weight: 200;
+      width: 90%;
+      margin: 0 auto;
+      color: $background;
+      font-size: 2.55rem;
+      text-align: center;
+      span {
+        color: $titleColour;
+        display: block;
+      }
     }
+  }
+}
+@media only screen and (min-width: 375px) {
+  .main__header__wrapper {
+    height: 50vh;
+    padding: 4.5rem 0;
   }
 }
