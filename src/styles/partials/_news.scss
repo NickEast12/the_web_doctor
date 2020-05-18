@@ -94,7 +94,9 @@
 }
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
   .main__header__wrapper {
-    padding: 7.5rem 0 4rem 0;
-    height: 35vh;
+    .news__size__override {
+      padding: 7.5rem 0 4rem 0;
+      height: 35vh;
+    }
   }
 }
