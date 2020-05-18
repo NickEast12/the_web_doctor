@@ -1,80 +1,118 @@
-.contact__wrapper {
-  &__header {
-    height: 100vh;
-    position: relative;
-    h2 {
-      position: absolute;
-      z-index: 50;
-      top: calc(0% + 8.5rem);
-      left: calc(0% + 1rem);
-      color: #fff;
-      @include hFont;
-      font-size: 2.75rem;
-    }
-  }
-  &__form {
-    background: $fontColour;
-    &__inner {
-      width: 90%;
-      margin: 0 auto;
-      padding: 2rem 0;
-      h3 {
-        text-align: center;
+@media only screen and (min-width: 320px) {
+  .contact__wrapper {
+    &__header {
+      height: 80vh;
+      position: relative;
+      h2 {
+        position: absolute;
+        z-index: 50;
+        top: calc(0% + 3.5rem);
+        left: calc(0% + 1rem);
+        color: #fff;
         @include hFont;
-        font-size: 1.75rem;
-        margin-bottom: 1.75rem;
+        font-size: 2.75rem;
       }
-      &__boxes {
-        width: 100%;
+    }
+    &__form {
+      background: $fontColour;
+      &__inner {
+        width: 90%;
         margin: 0 auto;
-        padding: 0.75rem 0;
-        p {
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-          font-size: 0.85rem;
-          font-weight: 200;
-          padding-bottom: 0.5rem;
-          span {
-            color: firebrick;
+        padding: 2rem 0;
+        h3 {
+          text-align: center;
+          @include hFont;
+          font-size: 1.75rem;
+          margin-bottom: 1.75rem;
+        }
+        &__boxes {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0.75rem 0;
+          p {
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-size: 0.85rem;
+            font-weight: 200;
+            padding-bottom: 0.5rem;
+            span {
+              color: firebrick;
+            }
+          }
+          input {
+            background: $altFooter;
+            width: 100%;
+            border: none;
+            padding: 0.85rem 0.5rem;
+            border-radius: 3px;
+            color: $fontColour;
+            font-size: 1rem;
+          }
+          textarea {
+            resize: none;
+            background: $altFooter;
+            width: 100%;
+            height: 7rem;
+            border: none;
+            border-radius: 3px;
+            font-size: 1rem;
+            padding: 0.5rem;
+            color: $fontColour;
           }
         }
-        input {
-          background: $altFooter;
-          width: 100%;
-          border: none;
-          padding: 0.85rem 0.5rem;
-          border-radius: 3px;
-          color: $fontColour;
-          font-size: 0.9rem;
-        }
-        textarea {
-          resize: none;
-          background: $altFooter;
-          width: 100%;
-          height: 7rem;
-          border: none;
-          border-radius: 3px;
-          font-size: 0.9rem;
-          padding: 0.5rem;
-          color: $fontColour;
+        &__btn {
+          width: 85%;
+          margin: 1rem auto;
+          text-align: center;
+          button {
+            width: 100%;
+            background: #049a9e;
+            border: none;
+            margin-top: 0.25rem;
+            border-radius: 2.5px;
+            padding: 1rem;
+            font-size: 0.85rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+          }
         }
       }
-      &__btn {
+    }
+  }
+}
+@media only screen and (min-width: 375px) {
+  .contact__wrapper {
+    &__header {
+      height: 70vh;
+
+      h2 {
+        top: calc(0% + 4.5rem);
+      }
+    }
+    &__form {
+      &__inner {
         width: 85%;
-        margin: 1rem auto;
-        text-align: center;
-        button {
-          width: 100%;
-          background: #049a9e;
-          border: none;
-          margin-top: 0.25rem;
-          border-radius: 2.5px;
-          padding: 1rem;
-          font-size: 0.85rem;
-          color: #fff;
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-        }
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 414px) {
+  .contact__wrapper {
+    &__header {
+      height: 65vh;
+
+      h2 {
+        top: calc(0% + 3.5rem);
+      }
+    }
+    &__form {
+      &__inner {
+        width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0;
       }
     }
   }
