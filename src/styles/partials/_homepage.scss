@@ -114,3 +114,28 @@
     }
   }
 }
+@media only screen and (min-width: 414px) {
+  .main__wrapper {
+    &__title {
+      height: 42.5vh;
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+    &__projects {
+      &__inner {
+        h4 {
+          font-size: 1.35rem;
+        }
+        h2 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    &__clients {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
