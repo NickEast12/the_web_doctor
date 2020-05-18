@@ -1,41 +1,20 @@
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react"
 
+import Icon from "../images/Icon-72.png"
+
 const googleAPI = process.env.GATSBY_GOOGLE_API_KEY
 
 const MyMapStyles = [
   {
-    featureType: "all",
-    elementType: "labels.text.fill",
+    elementType: "geometry",
     stylers: [
       {
-        saturation: 36,
-      },
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 40,
+        color: "#212121",
       },
     ],
   },
   {
-    featureType: "all",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        visibility: "on",
-      },
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 16,
-      },
-    ],
-  },
-  {
-    featureType: "all",
     elementType: "labels.icon",
     stylers: [
       {
@@ -44,71 +23,41 @@ const MyMapStyles = [
     ],
   },
   {
-    featureType: "administrative",
-    elementType: "geometry.fill",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#000000",
+        color: "#757575",
       },
+    ],
+  },
+  {
+    elementType: "labels.text.stroke",
+    stylers: [
       {
-        lightness: 20,
+        color: "#212121",
       },
     ],
   },
   {
     featureType: "administrative",
-    elementType: "geometry.stroke",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 17,
-      },
-      {
-        weight: 1.2,
-      },
-    ],
-  },
-  {
-    featureType: "administrative",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.country",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "simplified",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.country",
     elementType: "geometry",
     stylers: [
       {
-        visibility: "simplified",
+        color: "#757575",
       },
     ],
   },
   {
     featureType: "administrative.country",
-    elementType: "labels.text",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        visibility: "simplified",
+        color: "#9e9e9e",
       },
     ],
   },
   {
-    featureType: "administrative.province",
-    elementType: "all",
+    featureType: "administrative.land_parcel",
     stylers: [
       {
         visibility: "off",
@@ -117,127 +66,80 @@ const MyMapStyles = [
   },
   {
     featureType: "administrative.locality",
-    elementType: "all",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        visibility: "simplified",
-      },
-      {
-        saturation: "-100",
-      },
-      {
-        lightness: "30",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.neighborhood",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.land_parcel",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "off",
+        color: "#bdbdbd",
       },
     ],
   },
   {
     featureType: "landscape",
-    elementType: "all",
     stylers: [
       {
-        visibility: "simplified",
-      },
-      {
-        gamma: "0.00",
-      },
-      {
-        lightness: "74",
-      },
-    ],
-  },
-  {
-    featureType: "landscape",
-    elementType: "geometry",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 20,
-      },
-    ],
-  },
-  {
-    featureType: "landscape.man_made",
-    elementType: "all",
-    stylers: [
-      {
-        lightness: "3",
+        color: "#1f3040",
       },
     ],
   },
   {
     featureType: "poi",
-    elementType: "all",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        visibility: "off",
+        color: "#757575",
       },
     ],
   },
   {
-    featureType: "poi",
+    featureType: "poi.park",
     elementType: "geometry",
     stylers: [
       {
-        color: "#000000",
+        color: "#181818",
       },
+    ],
+  },
+  {
+    featureType: "poi.park",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        lightness: 21,
+        color: "#616161",
+      },
+    ],
+  },
+  {
+    featureType: "poi.park",
+    elementType: "labels.text.stroke",
+    stylers: [
+      {
+        color: "#1b1b1b",
       },
     ],
   },
   {
     featureType: "road",
-    elementType: "geometry",
     stylers: [
       {
-        visibility: "simplified",
+        color: "#15232f",
       },
     ],
   },
   {
-    featureType: "road.highway",
+    featureType: "road",
     elementType: "geometry.fill",
     stylers: [
       {
-        color: "#000000",
-      },
-      {
-        lightness: 17,
+        color: "#2c2c2c",
       },
     ],
   },
   {
-    featureType: "road.highway",
-    elementType: "geometry.stroke",
+    featureType: "road",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#000000",
-      },
-      {
-        lightness: 29,
-      },
-      {
-        weight: 0.2,
+        color: "#8a8a8a",
       },
     ],
   },
@@ -246,34 +148,43 @@ const MyMapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#000000",
+        color: "#373737",
       },
+    ],
+  },
+  {
+    featureType: "road.highway",
+    elementType: "geometry",
+    stylers: [
       {
-        lightness: 18,
+        color: "#3c3c3c",
+      },
+    ],
+  },
+  {
+    featureType: "road.highway.controlled_access",
+    elementType: "geometry",
+    stylers: [
+      {
+        color: "#4e4e4e",
       },
     ],
   },
   {
     featureType: "road.local",
-    elementType: "geometry",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#000000",
-      },
-      {
-        lightness: 16,
+        color: "#616161",
       },
     ],
   },
   {
     featureType: "transit",
-    elementType: "geometry",
+    elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#000000",
-      },
-      {
-        lightness: 19,
+        color: "#757575",
       },
     ],
   },
@@ -284,8 +195,14 @@ const MyMapStyles = [
       {
         color: "#000000",
       },
+    ],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        lightness: 17,
+        color: "#3d3d3d",
       },
     ],
   },
@@ -309,7 +226,7 @@ export class Maps extends Component {
         <Marker
           position={{ lat: 51.23796, lng: -0.20949 }}
           icon={{
-            url: "../icons/Icon-88.png",
+            url: `${Icon}`,
           }}
         />
       </Map>
