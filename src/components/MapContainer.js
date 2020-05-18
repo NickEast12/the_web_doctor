@@ -74,14 +74,6 @@ const MyMapStyles = [
     ],
   },
   {
-    featureType: "landscape",
-    stylers: [
-      {
-        color: "#1f3040",
-      },
-    ],
-  },
-  {
     featureType: "poi",
     elementType: "labels.text.fill",
     stylers: [
@@ -121,7 +113,7 @@ const MyMapStyles = [
     featureType: "road",
     stylers: [
       {
-        color: "#15232f",
+        color: "#0f1720",
       },
     ],
   },
@@ -139,7 +131,7 @@ const MyMapStyles = [
     elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#8a8a8a",
+        color: "#049a9e",
       },
     ],
   },
@@ -172,10 +164,36 @@ const MyMapStyles = [
   },
   {
     featureType: "road.local",
+    stylers: [
+      {
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "road.local",
+    elementType: "labels.text",
+    stylers: [
+      {
+        color: "#049a9e",
+      },
+    ],
+  },
+  {
+    featureType: "road.local",
     elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#616161",
+        color: "#049a9e",
+      },
+    ],
+  },
+  {
+    featureType: "road.local",
+    elementType: "labels.text.stroke",
+    stylers: [
+      {
+        visibility: "off",
       },
     ],
   },
