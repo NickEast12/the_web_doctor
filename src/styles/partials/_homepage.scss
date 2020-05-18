@@ -139,3 +139,28 @@
     }
   }
 }
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .main__wrapper {
+    &__title {
+      height: 40vh;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    &__projects {
+      &__inner {
+        h4 {
+          font-size: 1.35rem;
+        }
+        h2 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    &__clients {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
