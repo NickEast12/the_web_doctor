@@ -11,9 +11,14 @@ import Logo3 from "../images/logo3.png"
 import Logo4 from "../images/logo4.png"
 import Logo5 from "../images/logo5.png"
 import IslandPhoto from "../images/islandP1.jpg"
+import Adventure from "../images/adv1.jpg"
 
 const PhotoDiv = styled.div`
   background-image: url(${IslandPhoto});
+`
+
+const PhotoDiv2 = styled.div`
+  background-image: url(${Adventure});
 `
 
 const IndexPage = () => (
@@ -32,18 +37,24 @@ const IndexPage = () => (
             <h2>An exclusive private island for hire</h2>
           </PhotoDiv>
         </Link>
-        <PhotoDiv className="main__wrapper__projects__inner">
-          <h4>Luxury Island </h4>
-          <h2>An exclusive private island for hire</h2>
-        </PhotoDiv>
-        <PhotoDiv className="main__wrapper__projects__inner">
-          <h4>Luxury Island </h4>
-          <h2>An exclusive private island for hire</h2>
-        </PhotoDiv>
-        <PhotoDiv className="main__wrapper__projects__inner">
-          <h4>Luxury Island </h4>
-          <h2>An exclusive private island for hire</h2>
-        </PhotoDiv>
+        <Link to="/projects/adventure-hiking">
+          <PhotoDiv2 className="main__wrapper__projects__inner">
+            <h4>Adventure Hiking </h4>
+            <h2>Fall in love with the outdoors again</h2>
+          </PhotoDiv2>
+        </Link>
+        <Link to="">
+          <PhotoDiv className="main__wrapper__projects__inner">
+            <h4>Luxury Island </h4>
+            <h2>An exclusive private island for hire</h2>
+          </PhotoDiv>
+        </Link>
+        <Link to="">
+          <PhotoDiv className="main__wrapper__projects__inner">
+            <h4>Luxury Island </h4>
+            <h2>An exclusive private island for hire</h2>
+          </PhotoDiv>
+        </Link>
       </div>
       <div className="main__wrapper__clients">
         <h2>
