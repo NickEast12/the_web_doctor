@@ -88,12 +88,12 @@
   .news__wrapper {
     .news__size__override {
       height: 40vh;
-      padding: 4rem 0;
+      padding: 4.5rem 0;
     }
   }
 }
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
   .main__header__wrapper {
-    padding: 5.5rem 0;
+    padding: 5rem 0 4rem 0;
   }
 }
