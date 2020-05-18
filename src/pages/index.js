@@ -31,7 +31,7 @@ const PhotoDiv4 = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="The Web Doctor" />
     <div className="main__wrapper">
       <div className="main__wrapper__title">
         <h1>
