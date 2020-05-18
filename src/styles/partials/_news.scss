@@ -90,63 +90,10 @@
       height: 40vh;
       padding: 4rem 0;
     }
-    &__container {
-      width: 100%;
-      margin: 0 auto;
-
-      &__blogs {
-        padding: 2rem 0;
-        &:nth-child(odd) {
-          background-color: #ebeff5;
-        }
-        &:nth-child(even) {
-          background-color: #fff;
-        }
-        &__inner {
-          width: 85%;
-          margin: 0 auto;
-          h2 {
-            @include hFont;
-            font-size: 2.25rem;
-            padding: 0.5rem 0;
-          }
-          img {
-            width: 100%;
-            height: 10rem;
-            margin: 1rem 0;
-          }
-          h5 {
-            font-weight: 800;
-            font-size: 1.1rem;
-          }
-          h6 {
-            font-weight: 800;
-            font-size: 1.05rem;
-            color: $background;
-            margin-top: 0.25rem;
-          }
-          p {
-            margin: 0.5rem 0;
-            font-size: 1rem;
-          }
-          &__btn {
-            width: 60%;
-            margin: 1.5rem auto 1rem 0;
-            button {
-              width: 100%;
-              background: $titleColour;
-              border: none;
-              margin-top: 0.25rem;
-              border-radius: 2.5px;
-              padding: 0.75rem;
-              font-size: 0.85rem;
-              color: #fff;
-              text-transform: uppercase;
-              letter-spacing: 2.5px;
-            }
-          }
-        }
-      }
-    }
+  }
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .main__header__wrapper {
+    padding: 5.5rem 0;
   }
 }
