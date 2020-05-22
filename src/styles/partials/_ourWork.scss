@@ -66,3 +66,15 @@
     }
   }
 }
+@media only screen and (min-width: 1024px) {
+  .work__wrapper {
+    &__lower {
+      &__boxes {
+        height: 15.5rem;
+        h4 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

@@ -205,3 +205,54 @@
     }
   }
 }
+@media only screen and (min-width: 1024px) {
+  .footer__wrapper {
+    &__lower {
+      &__inner {
+        &__contact {
+          padding-right: 5rem;
+        }
+        &__social {
+          width: 20%;
+        }
+        &__logo {
+          img {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__wrapper {
+    &__news {
+      &__inner {
+        &__btn {
+          display: flex;
+          width: 80%;
+          input {
+            width: 65%;
+          }
+          button {
+            width: 35%;
+          }
+        }
+      }
+    }
+    &__lower {
+      &__inner {
+        justify-content: space-between;
+        &__social {
+          width: 15%;
+        }
+        &__logo {
+          text-align: right;
+          img {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

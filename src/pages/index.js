@@ -43,30 +43,45 @@ const IndexPage = () => (
           <PhotoDiv className="main__wrapper__projects__inner ">
             <h4>Luxury Island </h4>
             <h2>An exclusive private island for hire</h2>
+            <div className="main__wrapper__projects__inner__popup">
+              <h3>Visit Project</h3>
+            </div>
           </PhotoDiv>
         </Link>
         <Link to="/projects/adventure-hiking" className="grid-2">
           <PhotoDiv2 className="main__wrapper__projects__inner ">
             <h4>Adventure Hiking </h4>
             <h2>Fall in love with the outdoors again</h2>
+            <div className="main__wrapper__projects__inner__popup">
+              <h3>Visit Project</h3>
+            </div>
           </PhotoDiv2>
         </Link>
         <Link to="/projects/euphoria-festival" className="grid-3">
           <PhotoDiv3 className="main__wrapper__projects__inner ">
             <h4>Euphoria Festival</h4>
             <h2>Complete rework of the UK largest festival</h2>
+            <div className="main__wrapper__projects__inner__popup">
+              <h3>Visit Project</h3>
+            </div>
           </PhotoDiv3>
         </Link>
         <Link to="/projects/independent-coffee" className="grid-4">
           <PhotoDiv4 className="main__wrapper__projects__inner ">
             <h4>Independent Coffee </h4>
             <h2>A boutique coffee shop in the heart of Shoreditch</h2>
+            <div className="main__wrapper__projects__inner__popup">
+              <h3>Visit Project</h3>
+            </div>
           </PhotoDiv4>
         </Link>
         <Link to="/projects/independent-coffee" className="grid-5">
           <PhotoDiv4 className="main__wrapper__projects__inner ">
             <h4>Independent Coffee </h4>
             <h2>A boutique coffee shop in the heart of Shoreditch</h2>
+            <div className="main__wrapper__projects__inner__popup">
+              <h3>Visit Project</h3>
+            </div>
           </PhotoDiv4>
         </Link>
       </div>

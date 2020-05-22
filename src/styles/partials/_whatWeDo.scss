@@ -82,3 +82,18 @@
     }
   }
 }
+@media only screen and (min-width: 1024px) {
+  .wwd__wrapper {
+    &__lower {
+      grid-template-rows: repeat(4, 17.5rem);
+      &:nth-child(4) {
+      }
+      &__boxes {
+        h4 {
+          font-size: 1.15rem;
+        }
+        height: 100% !important;
+      }
+    }
+  }
+}

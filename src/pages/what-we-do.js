@@ -26,6 +26,7 @@ const ImageBoxes = styled.div`
     }
     &:nth-child(4) {
       background-image: url(${MobilePhoto});
+      background-position: left;
       height: 20rem;
     }
     &:nth-child(5) {

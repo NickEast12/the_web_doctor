@@ -162,3 +162,43 @@
     }
   }
 }
+@media only screen and (min-width: 1024px) {
+  .projects__wrapper {
+    &__header {
+      img {
+        height: 22.5rem;
+      }
+    }
+    &__content {
+      margin-top: 20rem;
+      &__img {
+        margin-top: -2.5rem;
+        img {
+          width: 85%;
+        }
+      }
+    }
+    &__quote {
+      &__inner {
+        width: 50%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .projects__wrapper {
+    &__content {
+      &__img {
+        img {
+          width: 65%;
+        }
+      }
+    }
+    &__img {
+      height: 25rem;
+      img {
+        height: 25rem;
+      }
+    }
+  }
+}

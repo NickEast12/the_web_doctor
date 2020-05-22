@@ -105,6 +105,9 @@
         h2 {
           font-size: 1.95rem;
         }
+        &__popup {
+          display: none;
+        }
       }
     }
     &__clients {
@@ -184,7 +187,6 @@
 
       .grid-1 {
         grid-area: large;
-        background: darkorchid;
       }
 
       .grid-2 {
@@ -249,6 +251,115 @@
             margin-right: 5px;
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main__wrapper {
+    &__title {
+      height: 45vh;
+      h1 {
+        font-size: 3.75rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .main__wrapper {
+    &__title {
+      height: 45vh;
+      h1 {
+        font-size: 3.75rem;
+        width: 75%;
+      }
+    }
+    &__projects {
+      grid-template-rows: 17.5rem 17.5rem 17.5rem;
+      &__inner {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+          .main__wrapper__projects__inner__popup {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+        }
+        &__popup {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+
+          height: 100%;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: all 0.25s linear;
+          h3 {
+            position: absolute;
+            bottom: calc(0% + 2rem);
+            left: calc(0% + 2rem);
+            @include pFont;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            z-index: 5;
+            opacity: 1;
+          }
+        }
+      }
+      .grid-1 {
+        .main__wrapper__projects__inner {
+          .main__wrapper__projects__inner__popup {
+            background: #00c9ff;
+            background: linear-gradient(to right, #00c9ff, #e4e4d9);
+            opacity: 0.5;
+          }
+        }
+      }
+      .grid-2 {
+        .main__wrapper__projects__inner {
+          .main__wrapper__projects__inner__popup {
+            background: #0f2027;
+            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+            opacity: 0.5;
+          }
+        }
+      }
+      .grid-3 {
+        .main__wrapper__projects__inner {
+          .main__wrapper__projects__inner__popup {
+            background: #aa4b6b;
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            opacity: 0.5;
+          }
+        }
+      }
+      .grid-4 {
+        .main__wrapper__projects__inner {
+          .main__wrapper__projects__inner__popup {
+            background: #1d976c;
+
+            background: linear-gradient(to right, #93f9b9, #1d976c);
+            opacity: 0.5;
+          }
+        }
+      }
+      .grid-5 {
+        .main__wrapper__projects__inner {
+          .main__wrapper__projects__inner__popup {
+            background: #1d976c;
+
+            background: linear-gradient(to right, #93f9b9, #1d976c);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    &__clients {
+      &__wrapper {
+        width: 100%;
       }
     }
   }
