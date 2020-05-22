@@ -38,32 +38,32 @@ const ContactPage = () => (
     <div className="work__wrapper">
       <Headertitle title="We ensure all we do had" span=" form & function" />
       <ImageBoxes className="work__wrapper__lower">
-        <Link to="/projects/luxury-island">
+        <Link to="/projects/luxury-island" className="pGrid1">
           <Box1 className="work__wrapper__lower__boxes">
             <h4>Luxury Island</h4>
           </Box1>
         </Link>
-        <Link to="/projects/adventure-hiking">
+        <Link to="/projects/adventure-hiking" className="pGrid2">
           <Box2 className="work__wrapper__lower__boxes">
             <h4>Adventure Hiking</h4>
           </Box2>
         </Link>
-        <Link to="/projects/euphoria-festival">
+        <Link to="/projects/euphoria-festival" className="pGrid3">
           <Box3 className="work__wrapper__lower__boxes">
             <h4>Euphoria Festival</h4>
           </Box3>
         </Link>
-        <Link to="/projects/independent-coffee">
+        <Link to="/projects/independent-coffee" className="pGrid4">
           <Box4 className="work__wrapper__lower__boxes">
             <h4>Independent Coffee</h4>
           </Box4>
         </Link>
-        <Link to="/">
+        <Link to="/" className="pGrid5">
           <Box5 className="work__wrapper__lower__boxes">
             <h4>ALSET</h4>
           </Box5>
         </Link>
-        <Link to="/">
+        <Link to="/" className="pGrid6">
           <Box6 className="work__wrapper__lower__boxes">
             <h4>Prime Villas</h4>
           </Box6>

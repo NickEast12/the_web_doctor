@@ -55,15 +55,19 @@ const Blog = () => {
                 key={edge.node.id}
               >
                 <div className="news__wrapper__container__blogs__inner">
-                  <h2>{edge.node.title}</h2>
-                  <img src={edge.node.image.file.url}></img>
-                  <h5>{edge.node.createdAt}</h5>
-                  <h6>{edge.node.author}</h6>
-                  <p>{edge.node.subtitle}</p>
-                  <div className="news__wrapper__container__blogs__inner__btn">
-                    <Link to={`/news/${edge.node.slug}`}>
-                      <button>Read More</button>
-                    </Link>
+                  <div className="news__wrapper__container__blogs__inner__content">
+                    <h2>{edge.node.title}</h2>
+                    <h5>{edge.node.createdAt}</h5>
+                    <h6>{edge.node.author}</h6>
+                    <p>{edge.node.subtitle}</p>
+                    <div className="news__wrapper__container__blogs__inner__content__btn">
+                      <Link to={`/news/${edge.node.slug}`}>
+                        <button>Read More</button>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="news__wrapper__container__blogs__inner__img">
+                    <img alt="news" src={edge.node.image.file.url}></img>
                   </div>
                 </div>
               </div>

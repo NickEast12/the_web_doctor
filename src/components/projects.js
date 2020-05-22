@@ -1,16 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout2 from "../components/layout2"
 import SEO from "../components/seo"
 
 const Projects = props => {
   return (
-    <Layout>
+    <Layout2>
       <SEO title={props.title} />
       <div className="projects__wrapper">
         <div className="projects__wrapper__header">
-          <img src={props.Headerimage} alt="header image" />
+          <img src={props.Headerimage} alt="header" />
         </div>
         <div className="projects__wrapper__content">
           <div className="projects__wrapper__content__info">
@@ -26,11 +25,11 @@ const Projects = props => {
             </div>
           </div>
           <div className="projects__wrapper__content__img">
-            <img src={props.Contentimage} alt="picture of project" />
+            <img src={props.Contentimage} alt="project" />
           </div>
         </div>
         <div className="projects__wrapper__img">
-          <img src={props.Lowerimage} alt="another photo of the project" />
+          <img src={props.Lowerimage} alt="projects" />
         </div>
         <div className="projects__wrapper__quote">
           <div className="projects__wrapper__quote__inner">
@@ -41,7 +40,7 @@ const Projects = props => {
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout2>
   )
 }
 

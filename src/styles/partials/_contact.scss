@@ -117,3 +117,53 @@
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .contact__wrapper {
+    &__header {
+      height: 40vh;
+
+      h2 {
+        left: calc(0% + 3rem);
+      }
+    }
+    &__form {
+      padding-bottom: 2.5rem;
+      &__inner {
+        width: 65%;
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2.5%;
+          grid-template-areas:
+            "a b"
+            "c d"
+            "e e"
+            "f f ";
+          .cGrid1 {
+            grid-area: a;
+          }
+          .cGrid2 {
+            grid-area: b;
+          }
+          .cGrid3 {
+            grid-area: c;
+          }
+          .cGrid4 {
+            grid-area: d;
+          }
+          .cGrid5 {
+            grid-area: e;
+          }
+          .cGrid6 {
+            grid-area: f;
+          }
+        }
+        &__boxes {
+          &__btn {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}

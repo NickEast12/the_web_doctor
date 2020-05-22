@@ -1,111 +1,206 @@
 @import "variables";
 
-.footer__wrapper {
-  background: $footerColour;
-  &__news {
-    width: 85%;
-    margin: 0 auto;
-    &__inner {
-      padding: 2.5rem 0;
-      width: 95%;
-      margin: 0 auto;
-      &__title {
-        padding-bottom: 1.25rem;
-        color: #fff;
-        h4 {
-          @include hFont;
-          font-size: 1.75rem;
-          padding-bottom: 1rem;
-          span {
-            color: $titleColour;
-            text-transform: capitalize;
-          }
-        }
-        p {
-          font-size: 0.95rem;
-          font-weight: 200;
-        }
-      }
-      &__btn {
-        input {
-          width: 100%;
-          background: #13212e;
-          border: none;
-          padding: 1.5rem 1rem;
-          font-size: 0.95rem;
-        }
-        button {
-          width: 100%;
-          background: $titleColour;
-          border: none;
-          margin-top: 0.25rem;
-          border-radius: 2.5px;
-          padding: 1.5rem;
-          font-size: 0.85rem;
-          color: #fff;
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-        }
-      }
-    }
-  }
-  &__lower {
-    background: #13212e;
-    width: 100%;
-    height: 100%;
-    &__inner {
+@media only screen and (min-width: 320px) {
+  .footer__wrapper {
+    background: $footerColour;
+    &__news {
       width: 85%;
       margin: 0 auto;
-      text-align: center;
-      padding-top: 2.5rem;
-      &__title {
-        h4 {
-          @include hFont;
+      &__inner {
+        padding: 2.5rem 0;
+        width: 95%;
+        margin: 0 auto;
+        &__title {
+          padding-bottom: 1.25rem;
           color: #fff;
-          font-size: 1.5rem;
-        }
-      }
-      &__links {
-        margin-top: 1.75rem;
-        &__section {
-          svg {
-            width: 25px;
-            height: 30px;
-            fill: $titleColour;
+          h4 {
+            @include hFont;
+            font-size: 1.75rem;
+            padding-bottom: 1rem;
+            span {
+              color: $titleColour;
+              text-transform: capitalize;
+            }
           }
           p {
-            color: #fff;
-            margin: 0.5rem 0 0.75rem 0;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 200;
           }
         }
+        &__btn {
+          input {
+            width: 100%;
+            background: #13212e;
+            border: none;
+            padding: 1.5rem 1rem;
+            font-size: 0.95rem;
+          }
+          button {
+            width: 100%;
+            background: $titleColour;
+            border: none;
+            margin-top: 0.25rem;
+            border-radius: 2.5px;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+          }
+        }
       }
-      &__social {
-        display: flex;
-        width: 65%;
+    }
+    &__lower {
+      background: #13212e;
+      width: 100%;
+      height: 100%;
+      &__inner {
+        width: 90%;
         margin: 0 auto;
-        padding: 1.5rem 0 2.5rem 0;
-        align-items: center;
-        justify-content: space-between;
-        svg {
-          width: 25px;
+        text-align: center;
+        padding-top: 2.5rem;
+        &__contact {
+          &__title {
+            h4 {
+              @include hFont;
+              color: #fff;
+              font-size: 1.5rem;
+            }
+          }
+
+          &__links {
+            margin-top: 1.75rem;
+            &__section {
+              svg {
+                width: 25px;
+                height: 30px;
+                fill: $titleColour;
+              }
+              p {
+                color: #fff;
+                margin: 0.5rem 0 0.75rem 0;
+                font-size: 1rem;
+                font-weight: 200;
+              }
+            }
+          }
+        }
+        &__social {
+          &__title {
+            padding-top: 2rem;
+            h4 {
+              color: white;
+              @include hFont;
+              font-size: 1.5rem;
+            }
+          }
+          &__container {
+            display: flex;
+            width: 65%;
+            margin: 0 auto;
+            padding: 1.5rem 0;
+            align-items: center;
+            justify-content: space-between;
+            svg {
+              width: 25px;
+            }
+          }
+        }
+        &__logo {
+          width: 100%;
+          padding: 1rem 0;
+          img {
+            width: 35%;
+          }
+        }
+      }
+    }
+    &__legal {
+      padding: 0.75rem 0;
+      background-color: #13212e;
+      text-align: center;
+      border-top: solid #fff 1px;
+      color: #fff;
+      p {
+        font-size: 0.75rem;
+        padding-bottom: 0.45rem;
+        cursor: pointer;
+        span {
+          color: $titleColour;
         }
       }
     }
   }
-  &__legal {
-    padding: 0.75rem 0;
-    background-color: #13212e;
-    text-align: center;
-    border-top: solid #fff 1px;
-    color: #fff;
-    p {
-      font-size: 0.75rem;
-      padding-bottom: 0.45rem;
-      cursor: pointer;
-      span {
-        color: $titleColour;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer__wrapper {
+    &__news {
+      width: 90%;
+      &__inner {
+        display: flex;
+        justify-content: space-between;
+        &__title {
+          width: 80%;
+        }
+        &__btn {
+          text-align: right;
+          padding-left: 5rem;
+        }
+      }
+    }
+    &__lower {
+      padding-bottom: 2.5rem;
+      &__inner {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        &__contact {
+          padding-right: 3rem;
+          &__title {
+            text-align: left;
+          }
+          &__links {
+            &__section {
+              display: flex;
+              p {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        &__social {
+          width: 30%;
+          &__title {
+            padding: 0;
+            text-align: left;
+          }
+          &__container {
+            margin: 1.75rem 0 0 0;
+            padding: 0;
+            width: 100%;
+          }
+        }
+        &__logo {
+          width: 40%;
+          text-align: right;
+          margin: 0;
+          padding: 0;
+          img {
+            width: 65%;
+          }
+        }
+      }
+    }
+    &__legal {
+      border: none;
+      &__inner {
+        display: flex;
+        border-top: solid #fff 1px;
+        padding-top: 1rem;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
       }
     }
   }

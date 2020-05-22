@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 const BlogPost = ({ pageContext }) => {
@@ -21,7 +19,7 @@ const BlogPost = ({ pageContext }) => {
         </div>
         <div className="blogs__wrapper__content">
           <h3>{pageContext.subtitle}</h3>
-          <img src={pageContext.image} />
+          <img alt="blog" src={pageContext.image} />
           <div
             className="blogs__wrapper__content__html"
             dangerouslySetInnerHTML={{ __html: pageContext.html }}

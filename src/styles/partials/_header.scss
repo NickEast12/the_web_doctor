@@ -1,46 +1,95 @@
 @import "variables.scss";
+@media only screen and (min-width: 320px) {
+  header {
+    .header__wrapper {
+      background: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25rem 1rem 0.95rem 1rem;
+      &__logo {
+        h2 {
+          font-size: 1rem;
+          letter-spacing: 3.5px;
+        }
+      }
 
-header {
-  .header__wrapper {
-    background: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25rem 1rem 0.95rem 1rem;
-    &__logo {
-      h2 {
-        font-size: 1rem;
-        letter-spacing: 3.5px;
+      &__ham {
+        margin: 0;
+        padding: 0;
+
+        &__btn {
+          &__inner {
+          }
+        }
+      }
+      &__desktop {
+        display: none;
       }
     }
-
-    &__ham {
-      margin: 0;
+    .mobile__menu {
+      display: block;
+      width: 100%;
+      background: $titleColour;
       padding: 0;
-
-      &__btn {
-        &__inner {
+      transition: all 0.35s ease;
+      ul {
+        list-style: none;
+        li {
+          text-align: center;
+          padding: 0.95rem 0;
+          border-bottom: solid $fontColour 1px;
+          color: #fff;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 0.9rem;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__wrapper {
+    width: 95%;
+    margin: 0.5rem auto;
+    justify-content: space-between;
+    &__logo {
+    }
+    &__ham {
+      display: none;
+    }
+    &__desktop {
+      display: block !important;
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-evenly;
+        width: 100%;
+        li {
+          @include pFont;
+          letter-spacing: 1px;
+          font-size: 0.9rem;
+          padding: 2px 0 0 15px;
+          transition: color 0.1s linear;
+          &:hover {
+            color: $titleColour;
+          }
         }
       }
     }
   }
   .mobile__menu {
-    display: block;
-    width: 100%;
-    background: $titleColour;
-    padding: 0;
-    transition: all 0.35s ease;
+    display: none !important;
+  }
+  .alt__header__wrapper {
+    h2 {
+      color: #fff;
+    }
     ul {
-      list-style: none;
       li {
-        text-align: center;
-        padding: 0.95rem 0;
-        border-bottom: solid $fontColour 1px;
         color: #fff;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
-        font-weight: 200;
       }
     }
   }

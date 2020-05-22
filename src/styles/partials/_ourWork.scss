@@ -53,3 +53,16 @@
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .work__wrapper {
+    &__lower {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2%;
+      padding-bottom: 6.5rem;
+      &__boxes {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

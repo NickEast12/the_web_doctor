@@ -39,44 +39,51 @@
         &__inner {
           width: 85%;
           margin: 0 auto;
-          h2 {
-            @include hFont;
-            font-size: 2.25rem;
-            padding: 0.5rem 0;
-          }
-          img {
-            width: 100%;
-            height: 10rem;
-            margin: 1rem 0;
-          }
-          h5 {
-            font-weight: 800;
-            font-size: 1.1rem;
-          }
-          h6 {
-            font-weight: 800;
-            font-size: 1.05rem;
-            color: $background;
-            margin-top: 0.25rem;
-          }
-          p {
-            margin: 0.5rem 0;
-            font-size: 1rem;
-          }
-          &__btn {
-            width: 60%;
-            margin: 1.5rem auto 1rem 0;
-            button {
-              width: 100%;
-              background: $titleColour;
-              border: none;
+          &__content {
+            h2 {
+              @include hFont;
+              font-size: 2.25rem;
+              padding: 0.5rem 0 1rem 0;
+              border-bottom: solid 2px $fontColour;
+            }
+            h5 {
+              font-weight: 800;
+              font-size: 1.1rem;
+              padding-top: 1rem;
+            }
+            h6 {
+              font-weight: 800;
+              font-size: 1.05rem;
+              color: $background;
               margin-top: 0.25rem;
-              border-radius: 2.5px;
-              padding: 0.75rem;
-              font-size: 0.85rem;
-              color: #fff;
-              text-transform: uppercase;
-              letter-spacing: 2.5px;
+            }
+            p {
+              margin: 0.5rem 0;
+              font-size: 1rem;
+            }
+            &__btn {
+              width: 60%;
+              margin: 1.5rem auto 1rem 0;
+              button {
+                width: 100%;
+                background: $titleColour;
+                border: none;
+                margin-top: 0.25rem;
+                border-radius: 2.5px;
+                padding: 0.75rem;
+                font-size: 0.85rem;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+              }
+            }
+          }
+          &__img {
+            width: 100%;
+            padding: 0.75rem 0;
+            img {
+              width: 100%;
+              height: 12rem;
             }
           }
         }
@@ -97,6 +104,45 @@
     .news__size__override {
       padding: 6.5rem 0 4rem 0;
       height: 40vh;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news__wrapper {
+    .news__size__override {
+      height: 30vh;
+      h1 {
+        padding-top: 1rem;
+      }
+    }
+    &__container {
+      &__blogs {
+        &__inner {
+          display: flex;
+          justify-content: space-between;
+          &__content {
+            width: 40%;
+          }
+          &__img {
+            width: 50%;
+            img {
+              height: 90%;
+              padding: 2.5rem 0;
+            }
+          }
+        }
+        &:nth-child(even) {
+          .news__wrapper__container__blogs__inner {
+            .news__wrapper__container__blogs__inner__content {
+              order: 2;
+              text-align: right;
+              .news__wrapper__container__blogs__inner__content__btn {
+                margin: 1.5rem 0 1rem auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
