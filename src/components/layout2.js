@@ -1,6 +1,6 @@
 import React from "react"
 
-import AltHeader from "./altheader"
+import AltHeader from "./altHeader"
 import Footer from "./footer"
 import "./layout.css"
 
