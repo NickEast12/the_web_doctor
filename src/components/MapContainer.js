@@ -232,6 +232,7 @@ export class Maps extends Component {
       styles: MyMapStyles,
     })
   }
+
   render() {
     return (
       <Map

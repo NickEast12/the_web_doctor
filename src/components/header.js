@@ -58,12 +58,11 @@ const StyledMenu = styled.div`
   }
 `
 
-const Header = ({ siteTitle }, props) => {
+const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
-  console.log(props)
   return (
     <header>
-      <div className={props.reset || "header__wrapper"}>
+      <div className="header__wrapper">
         <div className="header__wrapper__logo">
           <Link to="/">
             <h2>THE WEB DOCTOR</h2>
